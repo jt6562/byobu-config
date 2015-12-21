@@ -32,3 +32,15 @@ bind-key -n M-7 select-window -t 7
 bind-key -n M-8 select-window -t 8
 bind-key -n M-9 select-window -t 9
 
+unbind-key -n F5
+unbind-key -n M-F5
+bind-key -n M-F5 source $BYOBU_PREFIX/share/byobu/profiles/tmuxrc
+
+set -g prefix F12
+unbind-key -n C-a
+
+# for macos
+bind-key -n C-S-Up resize-pane -U
+bind-key -n C-S-Down resize-pane -D
+bind-key -n C-S-Left resize-pane -L
+bind-key -n C-S-Right resize-pane -R
