@@ -32,3 +32,6 @@ bind-key -n M-7 select-window -t 7
 bind-key -n M-8 select-window -t 8
 bind-key -n M-9 select-window -t 9
 
+unbind-key -n F5
+unbind-key -n M-F5
+bind-key -n M-F5 source $BYOBU_PREFIX/share/byobu/profiles/tmuxrc
