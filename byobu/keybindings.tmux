@@ -22,6 +22,8 @@ bind-key -n M-F5 source $BYOBU_PREFIX/share/byobu/profiles/tmuxrc
 set -g prefix F12
 unbind-key -n C-a
 
+bind-key -n C-l send-key 'C-l' \; clear-history
+
 # for macos
 bind-key -n C-S-Up resize-pane -U
 bind-key -n C-S-Down resize-pane -D
